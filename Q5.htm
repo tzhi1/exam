@@ -32,7 +32,27 @@
             }
         </style>
         <script>
+            function calc(){
+                var calculateNum=document.getElementById("form1");
+                var startNum=calculateNum.from.value;
+                var endNum=calculateNum.to.value;
+                var resultNum=document.getElementById("result");
+                var x;
+                
+                startNum=parseInt(startNum);
+                endNum=parseInt(endNum);
+                endNum=endNum;
 
+                var sum=0;
+
+                for(x=startNum; x<=endNum; x++){
+                    sum = sum + x;
+                }
+
+                resultNum.innerHTML=sum;
+
+            return false;
+            }
         </script>
     </head>
 
@@ -50,16 +70,16 @@
         </p>
         <form id="form1">
             <p>
-                From: <input type="text" name="from" size="10" /> To: <input type="text" name="to" size="10">
+                From: <input type="text" name="from" size="10" /> To: <input type="text" name="to" size="10" id="start">
             </p>
             <p>
-                Please select (for extra points):<br><br> all integers<input type="radio" name="types" value="all"> even
+                Please select (for extra points):<br><br> all integers<input type="radio" name="types" value="all" id="end"> even
                 numbers
                 <input type="radio" name="types" value="even"> odd numbers<input type="radio" name="types" value="odd"><br><br>
 
             </p>
             <p>
-                <input type="submit" name="Sum" value="SUM">
+                <input type="submit" name="Sum" value="SUM" onclick="return calc()">
                 <input type="reset" name="reset" value="CLEAR">
             </p>
             <p>The sum is <span id="result"></span>.</p>

@@ -6,7 +6,36 @@
         <meta charset="UTF-8">
         <title>Web Tech Exam - Q2</title>
         <style type="text/css">
+        img{
+            float:right;
+            margin-top:10px;
+            margin-bottom:10px;
+            margin-left:10px;
+            width:25%;
+        }
 
+        div{
+            background-color: yellow;
+            margin-left:250px;
+            margin-right:250px;
+            padding-left:135px;
+            padding-top:10px;
+        }
+
+        p{
+            font-family: cursive;
+            width:85%;
+            text-align: justify;
+        }
+
+        h1, h2{
+            background-color: white;
+            margin-right:400px; /*700px did not work with my brower size */
+        }
+
+        span{
+            color:red;
+        }
         </style>
 
     </head>
@@ -14,16 +43,16 @@
     <body>
         <!-- Your HTML goes here -->
 
-
-        Question 2
+        <div>
+        <h1>Question 2</h1>
         <a id="retina">
-  Retina Display</a>
+  <h2><a name="retina">Retina Display</a></h2></a>
 
         <p>When introducing the iPhone 4, Steve Jobs said the magic number for a retina display is about 300 PPI for a device
             held 10 to 12 inches from the eye. One way of expressing this as a unit is Pixels Per Degree (PPD) which takes
             into account both the screen resolution and the distance from which the device is viewed. Based on Jobs' magic
-            number of 300, the threshold for a Retina Display starts at a PPD value of 53.
-            <!--INSERT IMAGE HERE -->
+            number of 300, the threshold for a Retina Display starts at a <span>PPD</span> value of 53.
+            <img src="retinadisplay.jpg">
             53 PPD means that a tall skinny triangle with a height equal to the viewing distance and a top angle of one degree will have
             a base on the device's screen that covers 53 pixels. Any display's viewing quality (from phone displays to huge
             projectors) can be described with this size-independent universal parameter. Note that the PPD parameter is not
@@ -38,7 +67,7 @@
             Two times the Tan of π divided by 360 can also be approximated with π divided by 180 (= 0.01745).</p>
 
         <a id="criticism">
-   Criticism
+   <h2><a name="crit">Criticism</a></h2>
    </a>
         <p>Raymond Soneira, president of DisplayMate Technologies, has challenged Apple's claim. He says that the physiology
             of the human retina is such that there must be at least 477 pixels per inch in a pixelated display for the pixels
@@ -48,7 +77,7 @@
             the picture will look just fine....So in my opinion, what Jobs said was fine. Soneira, while technically correct,
             was being picky."[12] The retinal neuroscientist Bryan Jones offers a more detailed but similar analysis and
             comes to a similar conclusion: "...I'd find Apple’s claims stand up to what the human eye can perceive.</p>
-
+            </div>
     </body>
     <!-- I know you can do it! -->
 

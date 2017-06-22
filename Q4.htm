@@ -35,6 +35,32 @@
 		</style>
 
 		<script type="text/javascript">
+		function show(teamID){
+			var celticsPic=document.getElementById("celtics1")
+			var patriotsPic=document.getElementById("patriots1")
+            var pic=document.getElementById("picture");
+
+			if(teamID=="celtics1"){
+				pic.src="celtics.png";
+			}
+			else if(teamID=="patriots1"){
+				pic.src="patriots.jpg";
+			}
+
+			if(teamID=="picture"){
+				pic.style.borderColor="red";
+				pic.style.borderStyle="ridge";
+				pic.style.borderWidth="10px";
+			}
+
+			else{
+				pic.style.borderColor="black";
+				pic.style.borderStyle="dotted";
+				pic.style.borderWidth="3px";
+			}
+
+		}
+
 
 		</script>
 
@@ -53,11 +79,11 @@
 		</p>
 		<hr>
 		<p>
-			<img src="" alt="" title="This is the image" width="100" height="100" />
+			<img src="" alt="" title="This is the image" width="100" onmouseout="show()" onmouseover="show(this.id)" height="100" id="picture" />
 		</p>
 		<p >
-			<input type="button" value="Celtics" />
-			<input type="button" value="Patriots" />
+			<input type="button" value="Celtics" onclick="show(this.id)" id="celtics1"/>
+			<input type="button" value="Patriots" onclick="show(this.id)" id="patriots1"/>
 		</p>
 
 
